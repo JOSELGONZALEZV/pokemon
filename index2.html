@@ -19,10 +19,9 @@
 <script>
 
 $(document).ready(function(){
-
+   
 $.get("https://pokeapi.co/api/v2/pokemon/1/", function(respuesta){
-    console.log(respuesta)
-
+   
     var string = "<h2> pokemon </h2><h4> tipos </h4><ul>";
     for(i = 0; i <respuesta.types.length; i++){
     string += "<li>" + respuesta.types[i].type.name + "</li>";
